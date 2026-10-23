@@ -1,0 +1,174 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "study buddy",
+      "intents": [
+        {
+          "name": "StartQuizIntent",
+          "slots": [],
+          "samples": [
+            "start quiz",
+            "quiz me",
+            "ask me a question"
+          ]
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "choice",
+              "type": "ChoiceType"
+            }
+          ],
+          "samples": [
+            "{choice}",
+            "option {choice}",
+            "the answer is {choice}"
+          ]
+        },
+        {
+          "name": "RevisionIntent",
+          "slots": [
+            {
+              "name": "topic",
+              "type": "TopicType"
+            }
+          ],
+          "samples": [
+            "revise {topic}",
+            "give me a summary of {topic}",
+            "revision for {topic}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "slots": [],
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "ChoiceType",
+          "values": [
+            {
+              "name": {
+                "value": "a",
+                "synonyms": [
+                  "option a",
+                  "first",
+                  "the first one",
+                  "choice a"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "b",
+                "synonyms": [
+                  "option b",
+                  "second",
+                  "the second one",
+                  "choice b"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "c",
+                "synonyms": [
+                  "option c",
+                  "third",
+                  "the third one",
+                  "choice c"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "d",
+                "synonyms": [
+                  "option d",
+                  "fourth",
+                  "the fourth one",
+                  "choice d"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "TopicType",
+          "values": [
+            {
+              "name": {
+                "value": "acids and bases",
+                "synonyms": [
+                  "acids",
+                  "bases",
+                  "acid base",
+                  "acids bases"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "light",
+                "synonyms": [
+                  "light reflection",
+                  "light refraction",
+                  "optics"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "electricity",
+                "synonyms": [
+                  "electric current",
+                  "circuits",
+                  "electrical circuits"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "life processes",
+                "synonyms": [
+                  "life process",
+                  "living processes",
+                  "biological processes"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "carbon compounds",
+                "synonyms": [
+                  "carbon",
+                  "organic compounds",
+                  "carbon chemistry",
+                  "organic chemistry"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
